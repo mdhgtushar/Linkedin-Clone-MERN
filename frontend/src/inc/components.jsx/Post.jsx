@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import like from "../..//assets/icons/like.svg";
 import comment from "../../assets/icons/comment.svg";
 
-const Post = () => {
+const Post = ({ post }) => {
   return (
     <div className="border border-gray-200 mb-5">
       <div className="flex flex-row justify-start pb-2  px-4 py-4">
@@ -16,22 +16,17 @@ const Post = () => {
         </Link>
         <div className="pl-5">
           <h1 className="text-lg">
-            <Link to="/profile">Hobayer Golondaz</Link> -
-            <span className="text-sm"> 1d</span>
+            <Link to="/profile">
+              <b>Hobayer Golondaz</b>
+            </Link>{" "}
+            -<span className="text-sm"> 1d</span>
           </h1>
           <p className="text-sm">Full-Stack MERN Developer || JavaScript</p>
         </div>
       </div>
       <hr />
-      <p className="pb-2  px-4 py-4">
-        Smart work is not a concept for me, there is only one thing that can pay
-        back which is Work Hard!
-      </p>
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C4D22AQHW6YthtBIQPA/feedshare-shrink_800/0/1668852560607?e=1671667200&v=beta&t=JqDEFVWPySdN_Du3k0NZ8YCxfVdmz6gFSFJ3vK0Whiw"
-        alt=""
-        className="w-full"
-      />
+      <p className="pb-2  px-4 py-4">{post.title}</p>
+      <img src={post.image} alt="" className="w-full" />
       <div className="pt-2 px-4 py-1">
         <p className="pb-1 text-sm font-thin">5 likes, 0 comments</p>
         <hr />

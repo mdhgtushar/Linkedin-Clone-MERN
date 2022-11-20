@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="notifications" element={<Notification />} />
           <Route path="network" element={<Network />} />
+          <Route path="/*" element={"This Feature is not avilable right now. I am wrking for it"} />
         </Route>
       </Routes>
     </div>

@@ -14,7 +14,9 @@ const Network = () => {
   ) : (
     <>
       <SidebarHome />
-      <div className="flex-1"></div>
+      <div className="flex-1">
+        <div className=" border border-gray-200 p-4">No Padning Invites</div>
+      </div>
     </>
   );
 };

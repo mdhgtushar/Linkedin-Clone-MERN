@@ -12,9 +12,17 @@ const NotificationBox = () => {
             alt=""
           />
         </Link>
-        <div className="pl-5">
+        <div className="pl-5 flex-1">
           <b> Hobayer Golondaz</b> -<span className="text-sm"> 1d</span>
-          <p className="text-sm">Full-Stack MERN Developer || JavaScript</p>
+          <p className="text-sm">
+            In this podcast we talk about courses, the journey when learning
+            serverless and the value of serverless for developers, not just for
+            companies.In this podcast we talk about courses, the journey when
+            learning serverless and the value of serverless for developers, not
+            just for companies.In this podcast we talk about courses, the
+            journey when learning serverless and the value of serverless for
+            developers, not just for companies.
+          </p>
         </div>
       </div>
     </>
