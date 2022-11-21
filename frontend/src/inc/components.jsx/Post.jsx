@@ -5,7 +5,7 @@ import comment from "../../assets/icons/comment.svg";
 
 const Post = ({ post }) => {
   return (
-    <div className="border border-gray-200 mb-5">
+    <div className="border border-gray-200 mb-5 bg-white">
       <div className="flex flex-row justify-start pb-2  px-4 py-4">
         <Link to="/profile">
           <img

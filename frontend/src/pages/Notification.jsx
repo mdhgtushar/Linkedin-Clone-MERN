@@ -14,12 +14,12 @@ const Notification = () => {
   ) : (
     <>
       <div className="w-64 mr-4">
-        <div className="text-center border border-gray-200 px-4 py-8">
+        <div className="text-center border border-gray-200 px-4 py-8 bg-white">
           <h2 className="text-lg">Manage your Notifications</h2>
         </div>
       </div>
       <div className="flex-1">
-        <div className=" border border-gray-200 py-4">
+        <div className=" border border-gray-200 py-4 bg-white">
           <NotificationBox />
           <NotificationBox />
           <NotificationBox />

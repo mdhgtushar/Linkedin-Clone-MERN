@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Loading from "../inc/components.jsx/Loading";
 import Post from "../inc/components.jsx/Post";
 import SidebarHome from "../inc/components.jsx/SidebarHome";
+import HomeCreatePostCard from "../components/post/HomeCreatePostCard";
+import SuggessionsSidebar from "../components/network/SuggessionsSidebar";
+import SideAd from "../components/sidebar/SideAd";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -25,7 +29,7 @@ const Home = () => {
             "https://media-exp1.licdn.com/dms/image/C4D22AQHW6YthtBIQPA/feedshare-shrink_800/0/1668852560607?e=1671667200&v=beta&t=JqDEFVWPySdN_Du3k0NZ8YCxfVdmz6gFSFJ3vK0Whiw",
         },
       ]);
-    }, 1000);
+    }, 100);
   });
   return loading ? (
     <Loading />
@@ -33,15 +37,18 @@ const Home = () => {
     <>
       <SidebarHome />
       <div className="flex-1">
+        <HomeCreatePostCard />
+        <hr />
+        <br />
+
         {posts.map((post) => (
           <Post key={post.id} post={post} />
         ))}
       </div>
       <div className="w-64 ml-4">
-        <img
-          src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png"
-          alt="no magic"
-        />
+        <SideAd />
+        <br />
+        <SuggessionsSidebar />
       </div>
     </>
   );
