@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import like from "../..//assets/icons/like.svg";
 import comment from "../../assets/icons/comment.svg";
+import PostAuthor from "./PostAuthor";
+import TimeAgo from "./TimeAgo";
 
 const Post = ({ post }) => {
   return (
@@ -14,19 +16,11 @@ const Post = ({ post }) => {
             alt=""
           />
         </Link>
-        <div className="pl-5">
-          <h1 className="text-lg">
-            <Link to="/profile">
-              <b>Hobayer Golondaz</b>
-            </Link>{" "}
-            -<span className="text-sm"> 1d</span>
-          </h1>
-          <p className="text-sm">Full-Stack MERN Developer || JavaScript</p>
-        </div>
+        <PostAuthor userId={post.userId} postDate={post.date} />
       </div>
       <hr />
       <p className="pb-2  px-4 py-4">{post.title}</p>
-      <img src={post.image} alt="" className="w-full" />
+      <img src="https://picsum.photos/200/100" alt="" className="w-full" />
       <div className="pt-2 px-4 py-1">
         <p className="pb-1 text-sm font-thin">5 likes, 0 comments</p>
         <hr />

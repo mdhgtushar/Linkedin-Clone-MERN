@@ -28,7 +28,7 @@ const Login = () => {
       </div>
       <div
         className="flex items-center justify-center mx-auto p-5"
-        style={{ maxWidth: "1128px" }}
+        style={{ maxWidth: "1128px", height: "100vh" }}
       >
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1 className="text-4xl mb-5">Welcome Back</h1>

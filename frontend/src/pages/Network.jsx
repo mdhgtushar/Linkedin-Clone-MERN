@@ -4,6 +4,7 @@ import Loading from "../inc/components.jsx/Loading";
 import network from "../assets/icons/network.svg";
 import ProfileBox from "../components/network/ProfileBox";
 import SuggessionsSidebar from "../components/network/SuggessionsSidebar";
+import NetworkList from "../components/network/NetworkList";
 
 const Network = () => {
   const [loading, setLoading] = useState(true);
@@ -34,17 +35,7 @@ const Network = () => {
         <div className=" border border-gray-200 p-4 mb-3 bg-white">
           No Padning Invites
         </div>
-        <div class="grid grid-cols-3 gap-4">
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-          <ProfileBox />
-        </div>
+        <NetworkList />
       </div>
     </>
   );

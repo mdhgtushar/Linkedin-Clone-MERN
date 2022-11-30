@@ -12,16 +12,16 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/feed" element={<Layout />}>
           <Route path="" element={<Home />} />
           <Route path="notifications" element={<Notification />} />
           <Route path="network" element={<Network />} />
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={"This Feature is not avilable right now. I am wrking for it"} />
         </Route>
-        {/* <Route path="" element={<Landing />} />
+        <Route path="" element={<Landing />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} /> */}
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

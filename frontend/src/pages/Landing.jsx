@@ -40,7 +40,7 @@ const Landing = () => {
       </div>
       <div
         className="flex items-center mx-auto p-5"
-        style={{ maxWidth: "1128px" }}
+        style={{ maxWidth: "1128px", height: "100vh" }}
       >
         <div className="flex-1">
           <h1 className="text-5xl mb-5">

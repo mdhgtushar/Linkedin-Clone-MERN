@@ -1,19 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import SuggessionProfileCard from "./SuggessionProfileCard";
+import { useGetUsersQuery } from "../../features/users/userSlice";
+import Loading from "../../inc/components.jsx/Loading";
 
 const SuggessionsSidebar = () => {
-  return (
-    <div className="border border-gray-200 p-4 bg-white">
-      <h2 className="text-lg">Suggessions</h2>
-      <hr />
-      <SuggessionProfileCard />
-      <SuggessionProfileCard />
-      <SuggessionProfileCard />
-      <SuggessionProfileCard />
-      <SuggessionProfileCard />
-    </div>
-  );
+  const {
+    data: users,
+    isLoading,
+    isSuccess,
+    isError,
+    error,
+  } = useGetUsersQuery("getUsers");
+
+  let content;
+  if (isLoading) {
+    content = <Loading />;
+  } else if (isSuccess) {
+    content = (
+      <div className="border border-gray-200 p-4 bg-white">
+        <h2 className="text-lg">Suggessions</h2>
+        <hr />
+        {users.ids.map((userId) => {
+          return <SuggessionProfileCard user={users.entities[userId]} />;
+        })}
+      </div>
+    );
+  } else if (isError) {
+    content = <p>{error}</p>;
+  }
+
+  return <div>{content}</div>;
 };
 
 export default SuggessionsSidebar;
