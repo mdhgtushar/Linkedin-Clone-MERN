@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Loading from "../inc/components.jsx/Loading";
+import Loading from "../components/Loading";
 import NotificationBox from "../inc/components.jsx/NotificationBox";
 
 const Notification = () => {

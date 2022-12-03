@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
-import Loading from "../inc/components.jsx/Loading";
+import Loading from "../components/Loading";
 
 const Landing = () => {
   const [loading, setLoading] = useState(true);

@@ -4,7 +4,7 @@ import SuggessionsSidebar from "../components/network/SuggessionsSidebar";
 import About from "../components/profile/About";
 import Experience from "../components/profile/Experience";
 import SideAd from "../components/sidebar/SideAd";
-import Loading from "../inc/components.jsx/Loading";
+import Loading from "../components/Loading";
 
 const Profile = () => {
   const [loading, setLoading] = useState(true);

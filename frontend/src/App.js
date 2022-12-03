@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./inc/Layout";
+import CrudData from "./pages/CrudData";
 import Home from "./pages/Home";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
@@ -19,7 +20,7 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={"This Feature is not avilable right now. I am wrking for it"} />
         </Route>
-        <Route path="" element={<Landing />} />
+        <Route path="" element={<CrudData />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

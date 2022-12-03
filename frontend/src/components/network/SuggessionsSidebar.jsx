@@ -1,7 +1,7 @@
 import React from "react";
 import SuggessionProfileCard from "./SuggessionProfileCard";
 import { useGetUsersQuery } from "../../features/users/userSlice";
-import Loading from "../../inc/components.jsx/Loading";
+import Loading from "../Loading";
 
 const SuggessionsSidebar = () => {
   const {

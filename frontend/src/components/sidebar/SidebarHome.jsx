@@ -15,7 +15,7 @@ const SidebarHome = () => {
           <h1 className="text-lg">Hobayer Golondaz</h1>
           <p className="text-sm">Full-Stack MERN Developer || JavaScript</p>
           <Link
-            to="/network"
+            to="/feed/network"
             className="text-left text-sm p-1 px-5 mt-3 bg-gray-100 w-full block"
           >
             Connections

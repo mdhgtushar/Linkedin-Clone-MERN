@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 import { useGetPostsQuery } from "../../features/posts/PostSlice";
-import Loading from "../../inc/components.jsx/Loading";
+import Loading from "../Loading";
 
 const PostList = () => {
   const {

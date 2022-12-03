@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Loading from "../inc/components.jsx/Loading";
+import Loading from "../components/Loading";
 import network from "../assets/icons/network.svg";
-import ProfileBox from "../components/network/ProfileBox";
 import SuggessionsSidebar from "../components/network/SuggessionsSidebar";
 import NetworkList from "../components/network/NetworkList";
 
@@ -21,7 +20,7 @@ const Network = () => {
         <div className="border border-gray-200 px-4 py-8 bg-white">
           <p>Manage my network</p>
           <Link
-            to="/network"
+            to="/feed/network/my"
             className="text-left p-1 px-5 mt-3 bg-gray-100 w-full block flex items-center"
           >
             <img src={network} alt="non" className="h-5" />

@@ -13,7 +13,7 @@ const ProfileBox = ({ user }) => {
       <h1 className="text-lg">{user.name}</h1>
       <p className="text-sm">{user.email}</p>
       <Link
-        to="/network"
+        to="/feed/profile"
         className="text-center text-sm p-1 px-5 mt-3 bg-gray-100 w-full block"
       >
         Connect +

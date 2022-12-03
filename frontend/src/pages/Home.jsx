@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Loading from "../inc/components.jsx/Loading";
-import SidebarHome from "../inc/components.jsx/SidebarHome";
+import Loading from "../components/Loading";
+import SidebarHome from "../components/sidebar/SidebarHome";
 import HomeCreatePostCard from "../components/post/HomeCreatePostCard";
 import SuggessionsSidebar from "../components/network/SuggessionsSidebar";
 import SideAd from "../components/sidebar/SideAd";

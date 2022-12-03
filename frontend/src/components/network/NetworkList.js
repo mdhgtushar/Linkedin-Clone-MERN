@@ -1,6 +1,6 @@
 import React from 'react'
 import { useGetUsersQuery } from "../../features/users/userSlice";
-import Loading from '../../inc/components.jsx/Loading';
+import Loading from '../Loading';
 import ProfileBox from './ProfileBox';
 
 const NetworkList = () => {
