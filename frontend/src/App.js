@@ -20,7 +20,7 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={"This Feature is not avilable right now. I am wrking for it"} />
         </Route>
-        <Route path="" element={<CrudData />} />
+        <Route path="" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
